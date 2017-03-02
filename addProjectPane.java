@@ -47,15 +47,13 @@ public class addProjectPane extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewProject = new JLabel("New Project");
-		lblNewProject.setFont(new Font("Serif", Font.BOLD, 25));
-		lblNewProject.setForeground(Color.blue);
+		
 		lblNewProject.setBounds(101, 11, 153, 33);
 		contentPane.add(lblNewProject);
 		
 		JLabel lblNewLabel = new JLabel("Customer ID");
-		lblNewProject.setFont(new Font("Serif", Font.BOLD, 15));
-		lblNewProject.setForeground(Color.black);
-		lblNewLabel.setBounds(30, 72, 73, 21);
+		
+		lblNewLabel.setBounds(43, 72, 73, 21);
 		contentPane.add(lblNewLabel);
 		
 		textField = new JTextField();
@@ -64,9 +62,9 @@ public class addProjectPane extends JFrame {
 		textField.setColumns(10);
 		
 		JLabel lblName = new JLabel("Name");
-		lblName.setFont(new Font("Serif", Font.BOLD, 15));
-		lblName.setForeground(Color.black);
-		lblName.setBounds(38, 117, 46, 14);
+
+		
+		lblName.setBounds(43, 117, 46, 14);
 		contentPane.add(lblName);
 		
 		textField_1 = new JTextField();
@@ -75,9 +73,8 @@ public class addProjectPane extends JFrame {
 		textField_1.setColumns(10);
 		
 		JLabel lblStartDate = new JLabel("Start Date");
-		lblStartDate.setFont(new Font("Serif", Font.BOLD, 15));
-		lblStartDate.setForeground(Color.black);
-		lblStartDate.setBounds(30, 161, 73, 21);
+		
+		lblStartDate.setBounds(43, 161, 73, 21);
 		contentPane.add(lblStartDate);
 		
 		textField_2 = new JTextField();

@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
+import javax.swing.JButton;
 
 public class addTaskPane extends JFrame {
 
@@ -39,7 +40,7 @@ public class addTaskPane extends JFrame {
 	 */
 	public addTaskPane() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 468, 311);
+		setBounds(100, 100, 502, 362);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -96,7 +97,11 @@ public class addTaskPane extends JFrame {
 		JLabel label = new JLabel("");
 		Image images = new ImageIcon(this.getClass().getResource("/addTask.png")).getImage();
 		label.setIcon(new ImageIcon(images));
-		label.setBounds(261, 88, 157, 161);
+		label.setBounds(257, 64, 157, 161);
 		contentPane.add(label);
+		
+		JButton btnAddToProject = new JButton("Add to Project");
+		btnAddToProject.setBounds(231, 250, 183, 62);
+		contentPane.add(btnAddToProject);
 	}
 }

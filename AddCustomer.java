@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 //import java.awt.Image;
 import javax.swing.JTextField;
-
+import javax.swing.ButtonGroup;
 import javax.swing.JRadioButton;
 
 public class AddCustomer extends JFrame {
@@ -93,6 +93,7 @@ public class AddCustomer extends JFrame {
 		getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 		
+		ButtonGroup btg = new ButtonGroup();
 		JRadioButton rdbtnProfessional = new JRadioButton("Professional");
 		rdbtnProfessional.setBounds(98, 80, 109, 23);
 		getContentPane().add(rdbtnProfessional);
@@ -106,6 +107,7 @@ public class AddCustomer extends JFrame {
 		//add labels for name type address and contact
 		//add fields to input name address and contact number
 		//add jComboBox for type.
-		
+		btg.add(rdbtnDomestic);
+		btg.add(rdbtnProfessional);
 	}
 }

@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+//import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 
@@ -6,13 +6,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.FlowLayout;
+//import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Image;
 
 import javax.swing.JLabel;
 import javax.swing.JButton;
-import javax.swing.SwingConstants;
+//import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class view1 extends JFrame {
 
@@ -50,7 +52,7 @@ public class view1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblLabourCosting = new JLabel("\t\tLabour Costing Services");
-		lblLabourCosting.setFont(new Font("Serif", Font.BOLD, 25));
+		lblLabourCosting.setFont(new Font("Serif", Font.BOLD, 35));
 		lblLabourCosting.setForeground(Color.blue);
 		Image images = new ImageIcon(this.getClass().getResource("/option_one.png")).getImage();
 		lblLabourCosting.setIcon(new ImageIcon(images));
@@ -58,12 +60,16 @@ public class view1 extends JFrame {
 		contentPane.add(lblLabourCosting);
 		
 		JButton btnNewButton = new JButton("View Projects\r\n");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnNewButton.setFont(new Font("Serif", Font.BOLD, 25));
 		btnNewButton.setForeground(Color.blue);
 		Image imagess = new ImageIcon(this.getClass().getResource("/list.png")).getImage();
 		btnNewButton.setIcon(new ImageIcon(imagess));
 		
-		btnNewButton.setBounds(16, 197, 246, 48);
+		btnNewButton.setBounds(29, 325, 277, 106);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Add Projects ");
@@ -71,7 +77,7 @@ public class view1 extends JFrame {
 		btnNewButton_1.setForeground(Color.blue);
 		Image image = new ImageIcon(this.getClass().getResource("/add2.png")).getImage();
 		btnNewButton_1.setIcon(new ImageIcon(image));
-		btnNewButton_1.setBounds(303, 197, 177, 48);
+		btnNewButton_1.setBounds(29, 188, 277, 106);
 		contentPane.add(btnNewButton_1);
 		
 		
@@ -80,11 +86,19 @@ public class view1 extends JFrame {
 		
 		
 		JButton btnAddNewCustomer = new JButton("Add New Customer");
-		btnAddNewCustomer.setFont(new Font("Serif", Font.BOLD, 25));
+		btnAddNewCustomer.setFont(new Font("Serif", Font.BOLD, 20));
 		btnAddNewCustomer.setForeground(Color.blue);
 		Image img= new ImageIcon(this.getClass().getResource("/cust.png")).getImage();
 		btnAddNewCustomer.setIcon(new ImageIcon(img));
-		btnAddNewCustomer.setBounds(140, 342, 302, 53);
+		btnAddNewCustomer.setBounds(347, 188, 308, 106);
 		contentPane.add(btnAddNewCustomer);
+		
+		JButton btnNewButton_2 = new JButton("View Customers\r\n");
+		btnNewButton_2.setFont(new Font("Serif", Font.BOLD, 20));
+		btnNewButton_2.setForeground(Color.blue);
+		Image imag = new ImageIcon(this.getClass().getResource("/list.png")).getImage();
+		btnNewButton_2.setIcon(new ImageIcon(imag));
+		btnNewButton_2.setBounds(350, 325, 269, 106);
+		contentPane.add(btnNewButton_2);
 	}
 }

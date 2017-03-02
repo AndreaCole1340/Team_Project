@@ -44,7 +44,7 @@ public class password2 {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBackground(Color.GREEN);
+		frame.setBackground(Color.RED);
 		frame.getContentPane().setForeground(Color.YELLOW);
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

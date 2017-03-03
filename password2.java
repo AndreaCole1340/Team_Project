@@ -1,9 +1,7 @@
-import java.awt.EventQueue;
 import java.awt.*;
 import javax.swing.JFrame;
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
-import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -51,36 +49,59 @@ public class password2 {
 		frame.getContentPane().setLayout(null);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(291, 129, 106, 20);
+		passwordField.setBounds(278, 129, 106, 20);
 		frame.getContentPane().add(passwordField);
 		
 		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setBounds(199, 131, 82, 17);
+		lblPassword.setFont(new Font("comic sans ms", Font.BOLD, 15));
+		lblPassword.setBounds(186, 129, 82, 17);
 		frame.getContentPane().add(lblPassword);
 		
 		textField = new JTextField();
-		textField.setBounds(291, 74, 106, 20);
+		textField.setBounds(278, 74, 106, 20);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Username \r\n");
-		lblNewLabel.setBounds(168, 74, 106, 20);
+		lblNewLabel.setFont(new Font("comic sans ms", Font.BOLD, 15));
+		lblNewLabel.setBounds(170, 72, 106, 20);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("Log In");
+		btnNewButton.setFont(new Font("comic sans ms", Font.BOLD, 25));
+		btnNewButton.setForeground(Color.blue);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNewButton.setBounds(255, 193, 87, 23);
-		frame.getContentPane().add(btnNewButton);
+		
+		
 		
 		
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		Image images = new ImageIcon(this.getClass().getResource("/Users-icon2.png")).getImage();
 		lblNewLabel_1.setIcon(new ImageIcon(images));
-		lblNewLabel_1.setBounds(20, 21, 164, 195);
+		lblNewLabel_1.setBounds(20, 49, 140, 167);
 		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblWelcome = new JLabel("Welcome");
+		lblWelcome.setFont(new Font("comic sans ms", Font.BOLD, 35));
+		lblWelcome.setForeground(Color.blue);
+		
+		lblWelcome.setBounds(146, 11, 187, 37);
+		
+		frame.getContentPane().add(lblWelcome);
+		
+		JButton btnLogIn = new JButton("Log In");
+		btnLogIn.setFont(new Font("comic sans ms", Font.BOLD, 25));
+		btnLogIn.setForeground(Color.blue);
+	
+		btnLogIn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnLogIn.setBounds(236, 190, 116, 45);
+		frame.getContentPane().add(btnLogIn);
 	}
 }

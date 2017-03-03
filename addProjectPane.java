@@ -46,52 +46,55 @@ public class addProjectPane extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewProject = new JLabel("New Project");
-		
-		lblNewProject.setBounds(101, 11, 153, 33);
+		JLabel lblNewProject = new JLabel("Add New Project Details\r\n\r\n");
+		lblNewProject.setLabelFor(this);
+		lblNewProject.setFont(new Font("Comic Sans MS", Font.BOLD, 49));
+		lblNewProject.setBounds(81, -2, 254, 61);
 		contentPane.add(lblNewProject);
 		
 		JLabel lblNewLabel = new JLabel("Customer ID");
-		
-		lblNewLabel.setBounds(43, 72, 73, 21);
+		lblNewLabel.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
+		lblNewLabel.setBounds(23, 70, 106, 21);
 		contentPane.add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setBounds(139, 72, 86, 20);
+		textField.setBounds(139, 72, 98, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblName = new JLabel("Name");
+		lblName.setFont(new Font("comic sans ms", Font.BOLD, 15));
+		
 
 		
-		lblName.setBounds(43, 117, 46, 14);
+		lblName.setBounds(23, 115, 46, 14);
 		contentPane.add(lblName);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(139, 114, 86, 20);
+		textField_1.setBounds(139, 114, 98, 20);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
 		JLabel lblStartDate = new JLabel("Start Date");
-		
-		lblStartDate.setBounds(43, 161, 73, 21);
+		lblStartDate.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
+		lblStartDate.setBounds(23, 161, 93, 21);
 		contentPane.add(lblStartDate);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(139, 161, 86, 20);
+		textField_2.setBounds(139, 161, 98, 20);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
 		JButton btnAddTasks = new JButton("Add Tasks");
-		lblNewProject.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewProject.setFont(new Font("Comic Sans MS", Font.BOLD, 35));
 		lblNewProject.setForeground(Color.blue);
-		btnAddTasks.setBounds(38, 193, 153, 37);
+		btnAddTasks.setBounds(23, 213, 153, 37);
 		contentPane.add(btnAddTasks);
 		
 		JButton btnReturnTomenu = new JButton("Return to Menu");
-		lblNewProject.setFont(new Font("Serif", Font.BOLD, 20));
+		lblNewProject.setFont(new Font("comic sans ms", Font.BOLD, 15));
 		lblNewProject.setForeground(Color.blue);
-		btnReturnTomenu.setBounds(258, 193, 111, 37);
+		btnReturnTomenu.setBounds(280, 213, 111, 37);
 		contentPane.add(btnReturnTomenu);
 		
 		JLabel label = new JLabel("");

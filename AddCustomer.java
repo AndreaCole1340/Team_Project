@@ -1,7 +1,9 @@
 
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Image;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -44,7 +46,7 @@ public class AddCustomer extends JFrame {
 	 */
 	public AddCustomer() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 433, 267);
 		getContentPane().setLayout(null);
 		
 		JLabel lblEnterNewCustomer = new JLabel("Enter new customer details");
@@ -54,26 +56,26 @@ public class AddCustomer extends JFrame {
 		getContentPane().add(lblEnterNewCustomer);
 		
 		JLabel lblName = new JLabel("Name");
-		lblName.setFont(new Font("Serif", Font.BOLD, 15));
-		lblName.setForeground(Color.blue);
+		lblName.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
+		lblName.setForeground(Color.BLACK);
 
-		lblName.setBounds(30, 49, 61, 32);
+		lblName.setBounds(30, 41, 61, 32);
 		getContentPane().add(lblName);
 		
 		JLabel lblType = new JLabel("Type");
-		lblType.setFont(new Font("Serif", Font.BOLD, 15));
-		lblType.setForeground(Color.blue);
+		lblType.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
+		lblType.setForeground(Color.BLACK);
 		lblType.setBounds(30, 81, 46, 17);
 		getContentPane().add(lblType);
 		
 		textField = new JTextField();
-		textField.setBounds(140, 49, 86, 20);
+		textField.setBounds(140, 49, 148, 20);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblAddress = new JLabel("Address");
-		lblAddress.setFont(new Font("Serif", Font.BOLD, 15));
-		lblAddress.setForeground(Color.blue);
+		lblAddress.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
+		lblAddress.setForeground(Color.BLACK);
 		lblAddress.setBounds(30, 125, 74, 17);
 		getContentPane().add(lblAddress);
 		
@@ -83,8 +85,8 @@ public class AddCustomer extends JFrame {
 		textField_1.setColumns(10);
 		
 		JLabel lblContactNo = new JLabel("Contact No.");
-		lblContactNo.setFont(new Font("Serif", Font.BOLD, 15));
-		lblContactNo.setForeground(Color.blue);
+		lblContactNo.setFont(new Font("Comic Sans MS", Font.BOLD, 15));
+		lblContactNo.setForeground(Color.BLACK);
 		lblContactNo.setBounds(30, 178, 89, 20);
 		getContentPane().add(lblContactNo);
 		
@@ -94,12 +96,24 @@ public class AddCustomer extends JFrame {
 		textField_2.setColumns(10);
 		
 		JRadioButton rdbtnProfessional = new JRadioButton("Professional");
-		rdbtnProfessional.setBounds(98, 80, 109, 23);
+		rdbtnProfessional.setFont(new Font("Comic Sans MS", Font.BOLD | Font.ITALIC, 15));
+		rdbtnProfessional.setBounds(98, 80, 116, 23);
 		getContentPane().add(rdbtnProfessional);
 		
 		JRadioButton rdbtnDomestic = new JRadioButton("Personal");
-		rdbtnDomestic.setBounds(210, 80, 109, 23);
+		rdbtnDomestic.setFont(new Font("Comic Sans MS", Font.BOLD | Font.ITALIC, 15));
+		rdbtnDomestic.setBounds(233, 78, 109, 23);
 		getContentPane().add(rdbtnDomestic);
+		
+		
+		JLabel lblL = new JLabel("l");
+		Image image = new ImageIcon(this.getClass().getResource("/user2.png")).getImage();
+		lblL.setIcon(new ImageIcon(image));
+		lblL.setBounds(271, 68, 136, 173);
+		getContentPane().add(lblL);
+		
+		
+		
 		contentPane = new JPanel();
 		JLabel lblAddCustomer = new JLabel("\t\tEnter New Customer details");
 		lblAddCustomer.setFont(new Font("Serif", Font.BOLD, 25));
